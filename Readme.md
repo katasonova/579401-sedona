@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elena Katasonova](https://up.htmlacademy.ru/adaptive/14/user/579401).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/adaptive/14/user/23249).
 
 ---
 
