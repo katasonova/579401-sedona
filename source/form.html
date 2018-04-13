@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sedona</title>
+  <title>Sedona | Feedback</title>
 </head>
 
 <body>
@@ -34,79 +34,94 @@
 
   <main class="page-form">
 
-    <h1 class="page-form__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1 class="visually-hidden">Форма отзыва</h1>
 
-    <section class="advantages">
+    <section class="feedback">
 
-      <p class="advantages__text">
-        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      <h2 class="feedback__heading">Оставьте свой отзыв</h2>
+
+      <p class="feedback__text">
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
-      <ol class="advantages__list">
-        <li class="advantages__item">Настоящий городок
-          <p class="advantages__desc">
-            Седона не аттракцион для туристов, там течет своя жизнь
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__element">
+          <legend class="form__desc">Представьтесь:</legend>
+          <p class="form__item">
+            <label class="form__label">Имя*:
+              <input class="form__input" type="text" name="first-name" value="" placeholder="Петр" required>
+            </label>
           </p>
-          <img class="advantages__image" width="320" height="260" src="img/photo-city.jpg" alt="Фотография города">
-          <ul class="tips">
-            <li class="tips__item">Жилье
-              <p class="tips__desc">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
+          <p class="form__item">
+            <label class="form__label">Фамилия*:
+              <input class="form__input" type="text" name="last-name" value="" placeholder="Иванов" required>
+            </label>
+          </p>
+          <p class="form__item">
+            <label class="form__label">Отчество:
+              <input class="form__input" type="text" name="middle-name" value="" placeholder="Александрович">
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="form__element">
+          <legend class="form__desc">Контактная информация:</legend>
+          <p class="form__item">
+            <label class="form__label" for="form__telephone">Контактный телефон*:</label></p>
+          <p class="form__item">
+            <input class="form__input-contacts  contacts-telephone" id="form__telephone" type="tel" name="tel" value="" placeholder="Введите телефон" required>
+          </p>
+          <p class="form__item">
+            <label class="form__label" for="form__email">Электронная почта*:</label></p>
+          <p class="form__item">
+            <input class="form__input-contacts  contacts-email" id="form__email" type="email" name="email" value="" placeholder="Введите e-mail" required>
+          </p>
+        </fieldset>
+        <fieldset class="form__element">
+          <legend class="form__desc">Ваше общее впечатление:</legend>
+          <ul class="form__list">
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-radio" id="form__radio-positive" type="radio" name="general-impression" value="positive" checked>
+              <label class="form__label-radio" for="form__radio-positive">Скорее положительное</label>
             </li>
-            <li class="tips__item">Сувениры
-              <p class="tips__desc">
-                Не только китайского, но и местного производства!
-              </p>
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-radio" id="form__radio-negative" type="radio" name="general-impression" value="negative">
+              <label class="form__label-radio" for="form__radio-negative">Скорее отрицательное</label>
             </li>
-            <li class="tips__item">Еда
-              <p class="tips__desc">
-                Всегда заказывайте фирменный бурген, вы не разочаруетесь!
-              </p>
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-radio" id="form__radio-zero" type="radio" name="general-impression" value="zero">
+              <label class="form__label-radio" for="form__radio-zero">Затрудняюсь ответить</label>
             </li>
           </ul>
-        </li>
-        <li class="advantages__item">Там есть мост дьявола
-          <p class="advantages__desc">
-            Да, по нему можно пройти! Если вы осмелитесь, конечно
-          </p>
-          <img class="advantages__image" width="320" height="260" src="img/photo-bridge.jpg" alt="Фотография моста дьявола">
-        </li>
-        <li class="advantages__item">Небольшая площадь
-          <p class="advantages__desc">
-            Все интересные места находятся очень близко
-          </p>
-        </li>
-        <li class="advantages__item">Красивая дорога
-          <p class="advantages__desc">
-            Ехать в Седону из Лас-Вегаса совсем не скучно!
-          </p>
-        </li>
-        <li class="advantages__item">Мало туристов
-          <p class="advantages__desc">
-            Большинство едет в гранд каньон и толпится там
-          </p>
-        </li>
-      </ol>
-    </section>
+        </fieldset>
+        <fieldset class="form__element">
+          <legend class="form__desc">Посещенные достопримечательности:</legend>
+          <ul class="form__list">
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-checkbox" id="form__checkbox-bridge" type="checkbox" name="bridge" checked>
+              <label class="form__label-checkbox" for="form__checkbox-bridge">Мост Дьявола</label>
+            </li>
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-checkbox" id="form__checkbox-bell" type="checkbox" name="bell" checked>
+              <label class="form__label-checkbox" for="form__checkbox-bell">Гора-Колокол</label>
+            </li>
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-checkbox" id="form__checkbox-park" type="checkbox" name="park" checked>
+              <label class="form__label-checkbox" for="form__checkbox-park">Слайд-парк</label>
+            </li>
+            <li class="form__list-item">
+              <input class="visually-hidden  form__input-checkbox" id="form__checkbox-rocks" type="checkbox" name="rocks">
+              <label class="form__label-checkbox" for="form__checkbox-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__element">
+          <legend class="form__desc">Опишите свои эмоции:</legend>
+          <textarea class="form__message" id="form__personal-message" name="message" cols="28" rows="16" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="visually-hidden  form__label-message" for="form__personal-message">Ваше сообщение</label>
+        </fieldset>
+        <button class="form__button  button" type="submit">Отправить отзыв</button>
+      </form>
 
-    <section class="hotels">
-
-      <h2 class="visually-hidden">Гостиницы в Седоне</h2>
-
-      <p class="hotels__text">
-        Заинтересовались?
-      </p>
-      <p class="hotels__desc">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
-      </p>
-      <a class="hotels__link  button" href="#">Найти гостиницу</a>
-    </section>
-
-    <section class="map">
-
-      <h2 class="visually-hidden">Седона на карте штата</h2>
-
-      <img class="map__map-image" src="img/map.jpg" width="320" height="350" alt="Седона расположена в штате Аризона">
     </section>
 
     <footer class="page-footer">
