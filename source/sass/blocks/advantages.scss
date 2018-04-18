@@ -1,8 +1,8 @@
-.advantages__item {
-  &--main {
+.advantages__item--main {
     background-color: #81b3d2;
-  }
-  &--secondary {
+}
+
+.advantages__item--secondary {
     background-color: #eeeeee;
   }
 }
