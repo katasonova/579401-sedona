@@ -1,25 +1,21 @@
-.tips {
-  @include ul;
-}
+.page-footer__hashtag {
+  @include h-p;
 
-.tips__item {
   font-family: "PT Sans", "Tahoma", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: $text-main;
   @include uppercase;
-
-  background-color: #ffffff;
 }
 
-.tips__desc {
+.page-footer__copyright {
   @include h-p;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
-  color: $text-sedona;
+  line-height: 26px;
+  color: $text-main;
   @include uppercase;
 }

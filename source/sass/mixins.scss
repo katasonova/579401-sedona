@@ -1,0 +1,22 @@
+@mixin ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin h-p {
+  margin: 0;
+}
+
+@mixin button {
+  border: 0;
+}
+
+@mixin a {
+  text-decoration: none;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}

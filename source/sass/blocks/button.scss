@@ -1,0 +1,11 @@
+.button {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $main;
+  @include uppercase;
+  @include a;
+
+  background-color: $bg-sedona;
+}

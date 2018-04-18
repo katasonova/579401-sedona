@@ -1,18 +1,11 @@
-.main-nav__list {
+.socials-list {
   @include ul;
 }
 
-.main-nav__toggle {
-  @include button;
-}
-
-.main-nav__link {
+.socials-list__link {
   display: block;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
   color: $main;
   @include a;
   @include uppercase;
