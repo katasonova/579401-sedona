@@ -1,0 +1,71 @@
+.advantages {
+  padding-top: 42px;
+}
+
+.advantages__heading {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $text-main;
+
+  @include uppercase;
+}
+
+.advantages__text {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $text-sedona;
+
+  @include uppercase;
+}
+
+.advantages__list {
+  @include ul;
+}
+
+.advantages__item {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+
+  @include uppercase;
+}
+
+.advantages__item--main {
+  color: $main;
+
+  background-color: $bg-sedona;
+}
+
+.advantages__item--secondary {
+  color: $text-main;
+
+  background-color: #eeeeee;
+}
+
+.advantages__desc {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  @include uppercase;
+}
+
+.advantages__desc--main {
+  color: $main;
+}
+
+.advantages__desc--secondary {
+  color: $text-sedona;
+}

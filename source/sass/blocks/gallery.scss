@@ -1,0 +1,64 @@
+.gallery {
+  padding: 40px 20px 20px;
+}
+
+.gallery__heading {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $text-main;
+
+  @include uppercase;
+}
+
+.gallery__text {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-sedona;
+
+  @include uppercase;
+}
+
+.gallery__list {
+  @include ul;
+}
+
+.gallery__subtitle {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $text-main;
+
+  @include uppercase;
+}
+
+.gallery__link {
+  display: block;
+}
+
+.gallery__author {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-sedona;
+}
+
+.gallery__likes {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $text-main;
+}

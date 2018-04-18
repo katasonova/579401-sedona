@@ -1,0 +1,27 @@
+.feedback {
+  padding: 40px 20px 20px;
+}
+
+.feedback__heading {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $text-main;
+
+  @include uppercase;
+}
+
+.feedback__text {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $text-sedona;
+
+  @include uppercase;
+}

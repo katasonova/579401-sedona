@@ -1,0 +1,15 @@
+.socials-list {
+  @include ul;
+}
+
+.socials-list__link {
+  display: block;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  color: $main;
+
+  @include a;
+  @include uppercase;
+
+  background-color: $bg-sedona;
+}
