@@ -6,6 +6,7 @@
   font-weight: 700;
   line-height: 26px;
   color: $text-main;
+
   @include uppercase;
 }
 
@@ -17,6 +18,7 @@
   font-weight: 400;
   line-height: 26px;
   color: $text-sedona;
+
   @include uppercase;
 }
 
@@ -29,6 +31,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+
   @include uppercase;
 }
 
@@ -51,6 +54,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+
   @include uppercase;
 }
 

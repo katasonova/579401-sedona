@@ -4,8 +4,9 @@
   font-weight: 700;
   line-height: 26px;
   color: $main;
-  @include uppercase;
+
   @include a;
+  @include uppercase;
 
   background-color: $bg-sedona;
 }
