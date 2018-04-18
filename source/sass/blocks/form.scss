@@ -1,6 +1,8 @@
-.advantages__heading {
-  @include h-p;
+.form__element {
+  border: none;
+}
 
+.form__desc {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -10,9 +12,11 @@
   @include uppercase;
 }
 
-.advantages__text {
+.form__item {
   @include h-p;
+}
 
+.form__label {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -22,46 +26,39 @@
   @include uppercase;
 }
 
-.advantages__list {
+.form__input {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $text-main;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form__list {
   @include ul;
 }
 
-.advantages__item {
+.form__label-radio,
+.form__label-checkbox {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-
-  @include uppercase;
+  color: $text-main;
 }
 
-.advantages__item--main {
-  color: $main;
-
-  background-color: $bg-sedona;
-}
-
-.advantages__item--secondary {
+.form__message {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
   color: $text-main;
 
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
+  border: none;
 }
 
-.advantages__desc {
-  @include h-p;
 
-  font-family: "PT Sans", "Tahoma", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-
-  @include uppercase;
-}
-
-.advantages__desc--main {
-  color: $main;
-}
-
-.advantages__desc--secondary {
-  color: $text-sedona;
-}
