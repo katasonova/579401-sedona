@@ -1,17 +1,28 @@
 .tips {
+  display: flex;
+  flex-direction: column;
   @include ul;
 }
 
 .tips__item {
+  padding: 30px 17px 0px 70px;
+
+  color: $text-main;
+
+  background-color: #ffffff;
+}
+
+.tips__item-heading {
+  @include h-p;
+  padding-bottom: 13px;
+
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  color: $text-main;
+  text-align: left;
 
   @include uppercase;
-
-  background-color: #ffffff;
 }
 
 .tips__desc {
@@ -24,4 +35,37 @@
   color: $text-sedona;
 
   @include uppercase;
+}
+
+.tips__desc--last-elem {
+  padding-bottom: 57px;
+}
+
+@media (min-width: $tablet-width) {
+  .tips {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tips__item-heading {
+    padding-right: 10px;
+    padding-bottom: 20px;
+
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .tips__desc {
+    text-align: center;
+  }
+
+  .tips__item {
+    padding: 152px 40px 5px 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tips__item {
+    padding: 152px 40px 25px 39px;
+  }
 }

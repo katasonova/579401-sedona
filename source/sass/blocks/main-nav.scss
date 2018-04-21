@@ -23,7 +23,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 8px 10px;
+  padding: 8px 20px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
@@ -48,6 +48,16 @@
 
   .main-nav__toggle {
     @include vh;
+  }
+
+  .main-nav__link {
+    padding: 15px 20px;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: $text-main;
+
+    background-color: $main;
   }
 
   .main-nav__list {
