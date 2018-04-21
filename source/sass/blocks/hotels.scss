@@ -4,6 +4,10 @@
 
   width: 320px;
   margin: 0 auto;
+  padding: 0
+
+  /* Временно для сетки */
+  background-color: gold;
 }
 
 .hotels__text {
@@ -41,3 +45,23 @@
 
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .hotels {
+    width: 768px;
+  }
+
+  .hotels__text {
+    padding: 55px 20px 15px;
+
+    font-size: 30px;
+  }
+
+  .hotels__desc {
+    padding: 16px 186px 42px;
+  }
+
+  .hotels__link {
+    margin-bottom: 56px;
+    padding: 16px 136px;
+  }
