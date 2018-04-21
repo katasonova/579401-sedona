@@ -1,11 +1,12 @@
 .tips {
   display: flex;
   flex-direction: column;
+
   @include ul;
 }
 
 .tips__item {
-  padding: 30px 17px 0px 70px;
+  padding: 30px 17px 0 70px;
 
   color: $text-main;
 
