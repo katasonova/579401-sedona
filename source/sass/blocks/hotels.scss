@@ -4,7 +4,7 @@
 
   width: 320px;
   margin: 0 auto;
-  padding: 0
+  padding: 0;
 
   /* Временно для сетки */
   background-color: gold;
@@ -65,3 +65,18 @@
     margin-bottom: 56px;
     padding: 16px 136px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .hotels {
+    width: 1200px;
+  }
+
+  .hotels__desc {
+    padding: 16px 375px 47px;
+  }
+
+  .hotels__link {
+    margin-bottom: 66px;
+  }
+}
