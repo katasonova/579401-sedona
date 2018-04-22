@@ -25,7 +25,6 @@
 .page-header__container {
   margin-top: -27px;
   padding: 90px 20px 82px;
-  min-height: 389px;
   box-sizing: border-box;
 
   background-color: #728390;
@@ -55,10 +54,18 @@
     min-height: 518px;
     margin-top: 0;
   }
+
+  .page-header__container--inner-page {
+    min-height: 290px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1200px;
+  }
+
+  .page-header__container--inner-page {
+    min-height: 301px;
   }
 }

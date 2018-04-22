@@ -49,7 +49,7 @@
       </p>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__element">
+        <fieldset class="form__element  form__element--name">
           <legend class="form__desc">Представьтесь:</legend>
           <p class="form__item">
             <label class="form__label">Имя*:
@@ -67,25 +67,29 @@
             </label>
           </p>
         </fieldset>
-        <fieldset class="form__element">
+        <fieldset class="form__element  form__element--contacts">
           <legend class="form__desc">Контактная информация:</legend>
-          <p class="form__item">
-            <label class="form__label" for="form__telephone">Контактный телефон*:</label>
-          </p>
-          <p class="form__item form__item--telephone">
-            <input class="form__input" id="form__telephone" type="tel" name="tel" value="" placeholder="Введите телефон" required>
-          </p>
-          <p class="form__item">
-            <label class="form__label" for="form__email">Электронная почта*:</label>
-          </p>
-          <p class="form__item form__item--email">
-            <input class="form__input" id="form__email" type="email" name="email" value="" placeholder="Введите e-mail" required>
-          </p>
+          <div class="form__contacts--wrapper">
+            <p class="form__item form__item--label">
+              <label class="form__label" for="form__telephone">Контактный телефон*:</label>
+            </p>
+            <p class="form__item form__item--telephone">
+              <input class="form__input" id="form__telephone" type="tel" name="tel" value="" placeholder="Введите телефон" required>
+            </p>
+          </div>
+          <div class="form__contacts--wrapper">
+            <p class="form__item form__item--label">
+              <label class="form__label" for="form__email">Электронная почта*:</label>
+            </p>
+            <p class="form__item form__item--email">
+              <input class="form__input" id="form__email" type="email" name="email" value="" placeholder="Введите e-mail" required>
+            </p>
+          </div>
         </fieldset>
-        <fieldset class="form__element">
+        <fieldset class="form__element form__element--impression">
           <legend class="form__desc">Ваше общее впечатление:</legend>
           <ul class="form__list">
-            <li class="form__list-item">
+            <li class="form__list-item ">
               <input class="1visually-hidden  form__input-radio" id="form__radio-positive" type="radio" name="general-impression" value="positive" checked>
               <label class="form__label-radio" for="form__radio-positive">Скорее положительное</label>
             </li>
@@ -99,30 +103,30 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__element">
+        <fieldset class="form__element  form__element--sightseeing">
           <legend class="form__desc">Посещенные достопримечательности:</legend>
-          <ul class="form__list">
-            <li class="form__list-item">
+          <ul class="form__list  form__list--checkbox">
+            <li class="form__list-item  form__list-item--checkbox">
               <input class="1visually-hidden  form__input-checkbox" id="form__checkbox-bridge" type="checkbox" name="bridge" checked>
               <label class="form__label-checkbox" for="form__checkbox-bridge">Мост Дьявола</label>
             </li>
-            <li class="form__list-item">
+            <li class="form__list-item  form__list-item--checkbox">
               <input class="1visually-hidden  form__input-checkbox" id="form__checkbox-bell" type="checkbox" name="bell" checked>
               <label class="form__label-checkbox" for="form__checkbox-bell">Гора-Колокол</label>
             </li>
-            <li class="form__list-item">
+            <li class="form__list-item  form__list-item--checkbox">
               <input class="1visually-hidden  form__input-checkbox" id="form__checkbox-park" type="checkbox" name="park" checked>
               <label class="form__label-checkbox" for="form__checkbox-park">Слайд-парк</label>
             </li>
-            <li class="form__list-item">
+            <li class="form__list-item  form__list-item--checkbox">
               <input class="1visually-hidden  form__input-checkbox" id="form__checkbox-rocks" type="checkbox" name="rocks">
               <label class="form__label-checkbox" for="form__checkbox-rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__element">
+        <fieldset class="form__element  form__element--feedback">
           <legend class="form__desc">Опишите свои эмоции:</legend>
-          <textarea class="form__message" id="form__personal-message" name="message" cols="28" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__message" id="form__personal-message" name="message" cols="28" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
           <label class="visually-hidden  form__label-message" for="form__personal-message">Ваше сообщение</label>
         </fieldset>
         <button class="form__button  button" type="submit">Отправить отзыв</button>
@@ -136,13 +140,13 @@
       </p>
       <ul class="page-footer__socials  socials-list">
         <li class="socials-list__item">
-          <a class="socials-list__link" href="https://twitter.com"><span class="1visually-hidden">Мы в Твитере</span></a>
+          <a class="socials-list__link" href="https://twitter.com"><span class="visually-hidden">Мы в Твитере</span></a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link" href="https://www.facebook.com"><span class="1viasually-hidden">Мы в Фейсбуке</span></a>
+          <a class="socials-list__link" href="https://www.facebook.com"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link" href="https://www.youtube.com"><span class="1visually-hidden">Мы на Ютубе</span></a>
+          <a class="socials-list__link" href="https://www.youtube.com"><span class="visually-hidden">Мы на Ютубе</span></a>
         </li>
       </ul>
       <p class="page-footer__copyright">
