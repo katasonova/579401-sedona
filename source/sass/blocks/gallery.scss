@@ -116,12 +116,15 @@
   .gallery__item:first-child {
     background-color: mediumaquamarine;
   }
+
   .gallery__item:nth-child(2) {
     background-color: wheat;
   }
+
   .gallery__item:nth-child(3) {
     background-color: darkred;
   }
+
   .gallery__item:nth-child(4) {
     background-color: rebeccapurple;
   }
@@ -157,7 +160,7 @@
     padding-top: 112px;
   }
 
-    .gallery__text {
+  .gallery__text {
     width: 450px;
   }
 

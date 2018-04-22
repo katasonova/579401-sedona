@@ -114,7 +114,6 @@
 }
 
 .form__message {
-  padding: 0;
   padding: 16px 16px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -184,11 +183,6 @@
     margin-bottom: 30px;
   }
 
-  .form__list-item--checkbox {
-    width: 324px;
-    margin: 0;
-  }
-
   .form__list--checkbox {
     display: flex;
     flex-direction: row;
@@ -197,6 +191,7 @@
 
   .form__list-item--checkbox {
     width: 50%;
+    margin: 0;
     padding: 61px 10px 10px 68px;
     box-sizing: border-box;
   }
