@@ -1,9 +1,17 @@
 .socials-list {
+  display: flex;
+
   @include ul;
+  margin-bottom: 42px;
+}
+
+.socials-list__item {
+  margin-right: 7px;
 }
 
 .socials-list__link {
   display: block;
+  padding: 24px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   color: $main;
@@ -12,4 +20,10 @@
   @include uppercase;
 
   background-color: $bg-sedona;
+}
+
+@media (min-width: $tablet-width) {
+  .socials-list {
+    margin-bottom: 0;
+  }
 }
