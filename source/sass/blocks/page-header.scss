@@ -1,5 +1,31 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  /* Временно для сетки */
+  background-color: aqua;
+}
+
+.page-header__logo {
+  display: block;
+  align-self: center;
+  width: 102px;
+  height: 83px;
+
+  z-index: 5;
+
+  /* Временно для сетки */
+  background-color: violet;
+}
+
 .page-header__container {
-  padding: 85px 20px;
+  margin-top: -27px;
+  padding: 90px 20px 82px;
+  box-sizing: border-box;
 
   background-color: #728390;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -10,4 +36,36 @@
 
 .page-header__container--inner-page {
   padding: 50px 44px 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+
+  .page-header__logo {
+
+    /* Временно для сетки */
+    position: absolute;
+    top: 0;
+  }
+
+  .page-header__container {
+    min-height: 518px;
+    margin-top: 0;
+  }
+
+  .page-header__container--inner-page {
+    min-height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__container--inner-page {
+    min-height: 301px;
+  }
 }

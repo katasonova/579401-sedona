@@ -1,0 +1,23 @@
+.map {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  /* Временно для сетки */
+  background-color: skyblue;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 1200px;
+  }
+}

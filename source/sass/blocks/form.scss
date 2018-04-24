@@ -1,28 +1,75 @@
 .form {
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 12px;
 }
 
 .form__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
   padding: 0;
+  padding-bottom: 24px;
 
   border: none;
 }
 
+/* Временно для сетки */
+
+.form__element:first-child {
+  background-color: thistle;
+}
+
+.form__element:nth-child(2) {
+  background-color: aquamarine;
+}
+
+.form__element:nth-child(3) {
+  background-color: peachpuff;
+}
+
+.form__element:nth-child(4) {
+  background-color: sandybrown;
+}
+
+.form__element:nth-child(5) {
+  background-color: lavender;
+}
+
 .form__desc {
+  padding-bottom: 21px;
+
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   color: $text-main;
 
   @include uppercase;
 }
 
 .form__item {
+  align-items: flex-end;
+
   @include h-p;
+  padding-bottom: 20px;
+}
+
+.form__item--label {
+  padding-bottom: 6px;
 }
 
 .form__label {
+  padding-right: 12px;
+
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -33,6 +80,8 @@
 }
 
 .form__input {
+  padding: 16px;
+
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -47,6 +96,14 @@
   @include ul;
 }
 
+.form__list-item {
+  padding: 13px 17px 29px 59px;
+}
+
+.form__list-item--checkbox {
+  padding: 20px 20px 34px 81px;
+}
+
 .form__label-radio,
 .form__label-checkbox {
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -57,6 +114,8 @@
 }
 
 .form__message {
+  padding: 16px 16px;
+
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -65,4 +124,122 @@
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.form__button {
+  min-width: 280px;
+  margin-bottom: 36px;
+  padding: 15px 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+
+  .form__desc {
+    font-size: 21px;
+  }
+
+  .form__element--name {
+    width: 324px;
+    padding-bottom: 85px;
+  }
+
+  .form__element--contacts {
+    width: 100%;
+    padding-bottom: 42px;
+  }
+
+  .form__element--impression {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 324px;
+    padding-bottom: 85px;
+
+    order: -1;
+  }
+
+  .form__element--sightseeing {
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 64px;
+  }
+
+  .form__element--feedback {
+    width: 100%;
+    padding: 0;
+
+    /* Временно для сетки */
+    margin-bottom: 30px;
+  }
+
+  .form__list--checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__list-item--checkbox {
+    width: 50%;
+    margin: 0;
+    padding: 61px 10px 10px 68px;
+    box-sizing: border-box;
+  }
+
+  .form__message {
+    margin-top: 36px;
+  }
+
+  .form__button {
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1200px;
+  }
+
+  .form__element--name {
+    width: 50%;
+  }
+
+  .form__element--contacts {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 7px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    width: 400px;
+  }
+
+  .form__element--impression {
+    width: 50%;
+  }
+
+  .form__element--sightseeing {
+    padding-bottom: 72px;
+  }
+
+  .form__list-item--checkbox {
+    width: 25%;
+  }
+
+  .form__button {
+    margin-bottom: 67px;
+  }
 }

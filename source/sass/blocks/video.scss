@@ -1,14 +1,23 @@
 .video {
-  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .video__text {
   @include h-p;
+  padding-top: 11px;
+  padding-bottom: 25px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   color: $text-main;
 
   @include uppercase;
@@ -16,12 +25,67 @@
 
 .video__desc {
   @include h-p;
+  padding-bottom: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
   color: $text-sedona;
 
   @include uppercase;
+}
+
+.video__image {
+  margin-bottom: 105px;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 768px;
+  }
+
+  .video__text {
+    padding-top: 68px;
+    padding-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .video__desc {
+    padding-bottom: 96px;
+  }
+
+  .video__image-container {
+    width: 648px;
+    margin-bottom: 40px;
+
+    /* Временно для сетки */
+    min-height: 500px;
+
+    background-color: teal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 1200px;
+  }
+
+  .video__text {
+    padding-top: 72px;
+  }
+
+  .video__desc {
+    width: 450px;
+    padding-bottom: 71px;
+  }
+
+  .video__image-container {
+    width: 800px;
+    margin-bottom: 85px;
+  }
 }

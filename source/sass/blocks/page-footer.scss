@@ -1,9 +1,19 @@
 .page-footer {
-  padding: 38px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  /* Временно для сетки */
+  background-color: plum;
 }
 
 .page-footer__hashtag {
   @include h-p;
+  padding: 36px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
@@ -16,6 +26,8 @@
 
 .page-footer__copyright {
   @include h-p;
+  padding-bottom: 29px;
+
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -24,4 +36,31 @@
   color: $text-main;
 
   @include uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 768px;
+  }
+
+  .page-footer__hashtag {
+    padding: 47px 60px;
+  }
+
+  .page-footer__copyright {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1200px;
+  }
+
+  .page-footer__hashtag {
+    padding: 47px 119px;
+  }
 }

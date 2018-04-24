@@ -1,14 +1,23 @@
 .feedback {
-  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .feedback__heading {
   @include h-p;
+  padding-top: 38px;
+  padding-bottom: 25px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   color: $text-main;
 
   @include uppercase;
@@ -16,12 +25,45 @@
 
 .feedback__text {
   @include h-p;
+  padding-bottom: 25px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 24px;
+  text-align: center;
   color: $text-sedona;
 
   @include uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 768px;
+  }
+
+  .feedback__heading {
+    padding-top: 75px;
+    padding-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .feedback__text {
+    padding: 0 140px 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: 1200px;
+  }
+
+  .feedback__heading {
+    padding-top: 111px;
+  }
+
+  .feedback__text {
+    padding-bottom: 72px;
+  }
 }
