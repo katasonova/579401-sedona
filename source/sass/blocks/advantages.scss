@@ -7,8 +7,8 @@
   margin: 0 auto;
   padding: 0;
 
-  /* Временно для сетки */
-  background-color: pink;
+  /* Временно для сетки
+  background-color: pink; */
 }
 
 .advantages__heading {
@@ -27,7 +27,7 @@
 
 .advantages__text {
   @include h-p;
-  padding: 12px 20px 42px;
+  padding: 13px 20px 42px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -68,11 +68,21 @@
 }
 
 .advantages__item-heading--main {
-  padding: 40px 20px 22px;
+  padding: 39px 20px 10px;
 }
 
 .advantages__item-heading--secondary {
-  padding: 20px 20px 30px;
+  padding: 26px 20px 9px;
+}
+
+.advantages__item-number {
+  @include h-p;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages__desc {
@@ -88,22 +98,24 @@
 }
 
 .advantages__desc--main {
-  padding: 25px 20px 40px;
+  padding: 15px 20px 40px;
 
   color: $main;
 }
 
 .advantages__desc--secondary {
-  padding: 15px 20px 35px;
+  padding: 15px 36px 29px;
 
   color: $text-sedona;
 }
 
 .advantages__desc--last-elem {
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 
 .advantages__image {
+  display: block;
+
   @include img;
 }
 

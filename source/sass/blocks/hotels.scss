@@ -6,13 +6,13 @@
   margin: 0 auto;
   padding: 0;
 
-  /* Временно для сетки */
-  background-color: gold;
+  /* Временно для сетки
+  background-color: gold; */
 }
 
 .hotels__text {
   @include h-p;
-  padding: 30px 20px 9px;
+  padding: 28px 20px 9px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
