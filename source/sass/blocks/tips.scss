@@ -81,7 +81,26 @@
   }
 
   .tips__item {
-    padding: 152px 40px 5px 39px;
+    padding: 159px 40px 27px 39px;
+    &::before {
+      width: 78px;
+      height: 76px;
+    }
+  }
+
+  .tips__item--accommodation {
+    background-position: 90px 60px;
+    background-size: 75px;
+  }
+
+  .tips__item--souvenirs {
+    background-position: 80px 57px;
+    background-size: 64px;
+  }
+
+  .tips__item--food {
+    background-position: 86px 63px;
+    background-size: 75px;
   }
 
   .tips__item--spec-elem {
@@ -103,6 +122,22 @@
 
 @media (min-width: $desktop-width) {
   .tips__item {
-    padding: 152px 40px 25px 39px;
+    padding: 159px 71px 30px 58px;
+  }
+
+  .tips__item--accommodation {
+    background-position: 161px 60px;
+  }
+
+  .tips__item--souvenirs {
+    background-position: 145px 57px;
+  }
+
+  .tips__item--food {
+    background-position: 156px 63px;
+  }
+
+  .tips__desc--last-elem {
+    padding-bottom: 53px;
   }
 }

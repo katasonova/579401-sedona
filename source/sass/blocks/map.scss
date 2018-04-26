@@ -10,9 +10,18 @@
   background-color: skyblue;
 }
 
+.map__map-image {
+  @include img;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     width: 768px;
+  }
+
+  .map__map-image {
+    width: 100%;
+    height: 350px;
   }
 }
 

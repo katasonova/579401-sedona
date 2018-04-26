@@ -61,16 +61,15 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-between;
 
     width: 768px;
   }
 
   .page-footer__hashtag {
+    margin-right: 51px;
     padding: 47px 60px;
   }
 
@@ -86,5 +85,6 @@
 
   .page-footer__hashtag {
     padding: 47px 119px;
+    margin-right: 149px;
   }
 }
