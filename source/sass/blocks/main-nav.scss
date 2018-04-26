@@ -110,6 +110,9 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    display: flex;
+    justify-content: space-between;
+
     width: 768px;
 
     /* Временно для сетки */
@@ -123,11 +126,6 @@
 
   .main-nav__toggle {
     @include vh;
-  }
-
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
   }
 
   .main-nav__link {
