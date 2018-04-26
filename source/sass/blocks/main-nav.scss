@@ -120,16 +120,25 @@
     display: flex;
     justify-content: space-between;
 
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 3px;
+    padding-right: 1px;
   }
 
   .main-nav__toggle {
     @include vh;
   }
 
+  .main-nav__item {
+    width: 160px;
+    text-align: center;
+  }
+
+  .main-nav__item--spec-elem {
+    padding-right: 160px;
+  }
+
   .main-nav__link {
-    padding: 14px 9px;
+    padding: 14px 10px;
 
     font-size: 14px;
     line-height: 26px;
@@ -174,11 +183,20 @@
   }
 
   .main-nav__list {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .main-nav__item {
+    width: 250px;
+    text-align: center;
+  }
+
+  .main-nav__item--spec-elem {
+    padding-right: 250px;
   }
 
   .main-nav__link {
-    padding: 14px 31px;
+    padding: 14px 10px;
   }
 }

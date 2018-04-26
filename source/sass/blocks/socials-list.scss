@@ -10,6 +10,10 @@
   margin-right: 5px;
 }
 
+.socials-list__item--last-elem {
+  margin-right: 0;
+}
+
 .socials-list__link {
   display: block;
   padding: 24px;
@@ -34,13 +38,13 @@
 
 @media (min-width: $tablet-width) {
   .socials-list {
-    margin-right: 113px;
+    margin-right: 118px;
     margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .socials-list {
-    margin-right: 270px;
+    margin-right: 275px;
   }
 }
