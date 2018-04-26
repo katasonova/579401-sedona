@@ -71,6 +71,9 @@
 }
 
 .gallery__image {
+  display: block;
+  @include img;
+
   padding-bottom: 10px;
 }
 
@@ -110,6 +113,8 @@
 
   .gallery__text {
     padding-bottom: 69px;
+    padding-left: 170px;
+    padding-right: 170px;
   }
 
   /* Временно для сетки */
@@ -138,16 +143,49 @@
   }
 
   .gallery__item {
+    position: relative;
+
     width: 324px;
+
+    background-color: #f2f2f2;
   }
 
   .gallery__item--first-elem {
     width: 648px;
   }
 
-  .gallery__likes {
-    margin-left: auto;
+  .gallery__subtitle {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .gallery__image {
+    width: 324px;
+    height: 267px;
     padding-bottom: 15px;
+  }
+
+  .gallery__image--first-elem {
+    width: 648px;
+    height: 400px;
+  }
+
+  .gallery__author {
+    padding-left: 20px;
+    padding-bottom: 17px;
+  }
+
+  .gallery__likes {
+    position: absolute;
+    bottom: -11px;
+    right: 30px;
+
+    margin-left: auto;
+  }
+
+  .gallery__likes--first-elem {
+    bottom: -11px;
+    right: 21px;
   }
 }
 
@@ -158,10 +196,12 @@
 
   .gallery__heading {
     padding-top: 112px;
+    padding-bottom: 30px;
   }
 
   .gallery__text {
     width: 450px;
+    padding-bottom: 71px;
   }
 
   .gallery__list {
@@ -171,9 +211,9 @@
   }
 
   .gallery__item {
+    position: relative;
+
     width: (100% / 3);
-    /* Временно для сетки
-    height: 267px;*/
   }
 
   .gallery__item--first-elem {
@@ -181,4 +221,18 @@
     /* Временно для сетки
     height: 400px;*/
   }
+
+  .gallery__image {
+    width: 400px;
+    padding-bottom: 15px;
+  }
+
+  .gallery__image--first-elem {
+    width: 100%;
+  }
+
+  .gallery__desc-wrapper {
+    position: absolute;
+  }
+
 }
