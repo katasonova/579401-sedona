@@ -21,6 +21,27 @@
   border: none;
 }
 
+.form__element--name {
+  padding: 0 5px 24px 19px;
+}
+
+.form__element--contacts {
+  padding: 0 20px 28px 20px;
+}
+
+.form__element--impression {
+  padding: 0 20px 35px 20px;
+}
+
+.form__element--sightseeing {
+  padding-bottom: 16px;
+}
+
+.form__element--feedback {
+  padding: 0 20px 35px 20px;
+}
+
+
 /* Временно для сетки */
 
 .form__element:first-child {
@@ -63,8 +84,16 @@
   padding-bottom: 20px;
 }
 
+.form__item--name {
+  display: flex;
+}
+
 .form__item--label {
   padding-bottom: 6px;
+}
+
+.form__item--telephone {
+  padding-bottom: 12px;
 }
 
 .form__label {
@@ -79,8 +108,13 @@
   @include uppercase;
 }
 
+.form__label--contacts {
+  margin-left: 22px;
+}
+
 .form__input {
   padding: 16px;
+  box-sizing: border-box;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
@@ -92,16 +126,30 @@
   border: none;
 }
 
+.form__input--name {
+  width: 68%;
+  align-items: flex-start;
+  margin-left: 11px;
+}
+
+.form__input--contacts {
+  width: 280px;
+  padding-left: 21px;
+  box-sizing: border-box;
+}
+
 .form__list {
   @include ul;
 }
 
 .form__list-item {
-  padding: 13px 17px 29px 59px;
+  position: relative;
+
+  padding: 16px 17px 27px 78px;
 }
 
 .form__list-item--checkbox {
-  padding: 20px 20px 34px 81px;
+  padding: 11px 20px 43px 99px;
 }
 
 .form__label-radio,
@@ -113,8 +161,76 @@
   color: $text-main;
 }
 
+.form__label-radio {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #f2f2f2;
+
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    left: 17px;
+
+    width: 22px;
+    height: 22px;
+
+    background-color: #333333;
+
+    border-radius: 50%;
+  }
+}
+
+.form__label-checkbox {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: 19px;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #f2f2f2;
+
+    border-radius: 10%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: 37px;
+
+    width: 18px;
+    height: 11px;
+
+    border-bottom: 3px solid #231f20;
+    border-left: 3px solid #231f20;
+
+    transform: rotate(-45deg);
+  }
+}
+
 .form__message {
-  padding: 16px 16px;
+  width: 280px;
+  height: 160px;
+  padding: 12px 20px;
+  box-sizing: border-box;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
@@ -128,8 +244,9 @@
 
 .form__button {
   min-width: 280px;
+  margin-top: 12px;
   margin-bottom: 36px;
-  padding: 15px 10px;
+  padding: 16px 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -219,6 +336,10 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 7px;
+  }
+
+  .form__contacts-container {
+    display: flex;
   }
 
   .form__contacts-wrapper {
