@@ -412,38 +412,93 @@
 
   .form__element--name {
     width: 50%;
+    padding-left: 80px;
   }
 
   .form__element--contacts {
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 7px;
+    padding-bottom: 33px;
+  }
+
+  .form__element--impression {
+    padding-left: 84px;
+  }
+
+  .form__element--sightseeing {
+    justify-content: space-between;
+
+    padding-bottom: 81px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form__element--feedback {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .form__contacts-container {
     display: flex;
+    justify-content: space-between;
+
+    padding-top: 52px;
   }
 
   .form__contacts-wrapper {
     display: flex;
     flex-direction: row;
 
-    width: 400px;
+    width: 480px;
+  }
+
+  .form__item--label {
+    padding-top: 17px;
+    padding-right: 6px;
   }
 
   .form__element--impression {
     width: 50%;
   }
 
-  .form__element--sightseeing {
-    padding-bottom: 72px;
-  }
-
   .form__list-item--checkbox {
     width: 25%;
+    padding: 61px 0 1px 120px;
+  }
+
+  .form__label-checkbox {
+    &::before {
+      left: 38px;
+    }
+
+    &::after {
+      left: 57px;
+    }
+  }
+
+  .form__label--contacts {
+    margin-left: 0;
+  }
+
+  .form__label-spec-label {
+    display: none;
+  }
+
+  .form__input--contacts {
+    width: 315px;
+  }
+
+  .form__message {
+    width: 960px;
   }
 
   .form__button {
+    width: 50%;
     margin-bottom: 67px;
+  }
+
+  .form__button-wrapper {
+    width: 960px;
+    padding: 0 60px 0 60px;
   }
 }
