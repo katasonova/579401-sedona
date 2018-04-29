@@ -50,6 +50,11 @@
     box-sizing: border-box;
   }
 
+  .modal__heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   /* Временно для сетки */
   .modal--sucсess {
     background-color: beige;

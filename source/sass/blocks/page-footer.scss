@@ -7,13 +7,13 @@
   margin: 0 auto;
   padding: 0;
 
-  /* Временно для сетки */
-  background-color: plum;
+  /* Временно для сетки
+  background-color: plum;*/
 }
 
 .page-footer__hashtag {
   @include h-p;
-  padding: 36px;
+  padding: 39px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
@@ -26,7 +26,8 @@
 
 .page-footer__copyright {
   @include h-p;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
+  padding-right: 41px;
 
 
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -38,15 +39,37 @@
   @include uppercase;
 }
 
+.page-footer__link {
+  position: relative;
+}
+
+.page-footer__link-logo {
+  position: absolute;
+  top: -29px;
+  left: 102px;
+
+  width: 27px;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    fill: $bg-sedona;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-between;
 
     width: 768px;
   }
 
   .page-footer__hashtag {
+    margin-right: 51px;
     padding: 47px 60px;
   }
 
@@ -62,5 +85,6 @@
 
   .page-footer__hashtag {
     padding: 47px 119px;
+    margin-right: 149px;
   }
 }

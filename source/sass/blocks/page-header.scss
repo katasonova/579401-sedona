@@ -5,9 +5,6 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-
-  /* Временно для сетки */
-  background-color: aqua;
 }
 
 .page-header__logo {
@@ -17,14 +14,11 @@
   height: 83px;
 
   z-index: 5;
-
-  /* Временно для сетки */
-  background-color: violet;
 }
 
 .page-header__container {
   margin-top: -27px;
-  padding: 90px 20px 82px;
+  padding: 90px 20px 86px;
   box-sizing: border-box;
 
   background-color: #728390;
@@ -35,7 +29,13 @@
 }
 
 .page-header__container--inner-page {
-  padding: 50px 44px 65px;
+  padding: 52px 44px 68px;
+}
+
+.page-header__intro-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {

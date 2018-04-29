@@ -26,8 +26,8 @@
 .video__desc {
   @include h-p;
   padding-bottom: 36px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -40,7 +40,11 @@
 }
 
 .video__image {
-  margin-bottom: 105px;
+  display: block;
+
+  @include img;
+
+  margin-bottom: 100px;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,24 +53,28 @@
   }
 
   .video__text {
-    padding-top: 68px;
+    padding-top: 67px;
     padding-bottom: 30px;
 
     font-size: 30px;
   }
 
   .video__desc {
-    padding-bottom: 96px;
+    padding-bottom: 73px;
+    padding-left: 165px;
+    padding-right: 165px;
   }
 
   .video__image-container {
-    width: 648px;
+    max-height: 500px;
     margin-bottom: 40px;
+  }
 
-    /* Временно для сетки */
-    min-height: 500px;
+  .video__image {
+    width: 648px;
+    height: 500px;
 
-    background-color: teal;
+    margin-bottom: 100px;
   }
 }
 
@@ -76,7 +84,7 @@
   }
 
   .video__text {
-    padding-top: 72px;
+    padding-top: 70px;
   }
 
   .video__desc {
@@ -87,5 +95,9 @@
   .video__image-container {
     width: 800px;
     margin-bottom: 85px;
+  }
+
+  .video__image {
+    width: 800px;
   }
 }

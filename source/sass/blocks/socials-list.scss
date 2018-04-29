@@ -1,12 +1,17 @@
 .socials-list {
   display: flex;
+  justify-content: space-between;
 
   @include ul;
   margin-bottom: 42px;
 }
 
 .socials-list__item {
-  margin-right: 7px;
+  margin-right: 5px;
+}
+
+.socials-list__item--last-elem {
+  margin-right: 0;
 }
 
 .socials-list__link {
@@ -20,10 +25,26 @@
   @include uppercase;
 
   background-color: $bg-sedona;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .socials-list {
+    margin-right: 113px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials-list {
+    margin-right: 269px;
   }
 }

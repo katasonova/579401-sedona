@@ -6,13 +6,13 @@
   margin: 0 auto;
   padding: 0;
 
-  /* Временно для сетки */
-  background-color: gold;
+  /* Временно для сетки
+  background-color: gold; */
 }
 
 .hotels__text {
   @include h-p;
-  padding: 30px 20px 9px;
+  padding: 28px 20px 9px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
@@ -44,6 +44,23 @@
   padding: 16px 46px;
 
   text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    color: rgb(255, 255, 255);
+
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -62,7 +79,7 @@
   }
 
   .hotels__link {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     padding: 16px 136px;
   }
 }
@@ -73,7 +90,7 @@
   }
 
   .hotels__desc {
-    padding: 16px 375px 47px;
+    padding: 16px 401px 47px;
   }
 
   .hotels__link {
