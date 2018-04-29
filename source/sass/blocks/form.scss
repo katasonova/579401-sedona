@@ -469,6 +469,10 @@
     padding: 61px 0 1px 120px;
   }
 
+  .form__list-item--last-elem {
+    padding-left: 95px;
+  }
+
   .form__label--name {
     width: 400px;
   }
@@ -480,6 +484,16 @@
 
     &::after {
       left: 57px;
+    }
+  }
+
+  .form__label-checkbox--last-elem {
+    &::before {
+      left: 15px;
+    }
+
+    &::after {
+      left: 34px;
     }
   }
 

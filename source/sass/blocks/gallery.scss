@@ -75,11 +75,16 @@
 
   @include img;
 
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.gallery__desc-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery__author {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -91,7 +96,7 @@
 
 .gallery__likes {
   padding-left: 36px;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -163,10 +168,6 @@
     width: 324px;
     height: 267px;
     padding-bottom: 15px;
-  }
-
-  .gallery__desc-wrapper {
-    padding-bottom: 17px;
   }
 
   .gallery__image--first-elem {
