@@ -5,12 +5,11 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-
-  /* Временно для сетки */
-  background-color: skyblue;
 }
 
 .map__map-image {
+  display: block;
+
   @include img;
 }
 

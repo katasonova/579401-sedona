@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona | Feedback</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="picturefill.min.js"></script>
 </head>
 
 <body>
 
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города Седоны">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города Седоны">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle  main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
