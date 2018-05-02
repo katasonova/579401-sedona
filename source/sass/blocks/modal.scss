@@ -6,6 +6,9 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
+
+  box-shadow: 0 19px 15px -5px rgba(0, 1, 1, 0.15),
+    0 -9px 15px -5px rgba(0, 1, 1, 0.15);
 }
 
 .modal__heading {
@@ -48,6 +51,8 @@
   .modal {
     width: 768px;
     box-sizing: border-box;
+
+    box-shadow: 0 0 19px 0 rgba(0, 1, 1, 0.15);
   }
 
   .modal__heading {
@@ -55,17 +60,16 @@
     line-height: 40px;
   }
 
-  /* Временно для сетки */
+  /* Временно для сетки
   .modal--sucсess {
     background-color: beige;
-  }
-
+  }*/
   .modal--failure {
     width: 400px;
     box-sizing: border-box;
 
-    /* Временно для сетки */
-    background-color: bisque;
+    /* Временно для сетки
+    background-color: bisque;*/
   }
 
   .modal__button-close {

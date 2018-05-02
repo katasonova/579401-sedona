@@ -6,162 +6,181 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
+  <div class="page-container">
 
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города Седоны">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle  main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link  main-nav__link--first-elem  main-nav__link--active">Главная</a>
-        </li>
-        <li class="main-nav__item  main-nav__item--spec-elem">
-          <a class="main-nav__link" href="photo.html">Фото и видео</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link  main-nav__link--last-elem" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="page-header__container">
-      <img class="page-header__intro-image" src="img/text-sedona-index.svg" width="280" height="213" alt="Добро пожаловать в Седону">
-    </div>
-  </header>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города Седоны">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle  main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--first-elem  main-nav__link--active">Главная</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--spec-elem">
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link  main-nav__link--last-elem" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__container">
+        <img class="page-header__intro-image" src="img/text-sedona-index.svg" width="280" height="213" alt="Добро пожаловать в Седону">
+      </div>
+    </header>
 
-  <main class="page-main">
+    <main class="page-main">
 
-    <h1 class="visually-hidden">Седона - лучшее направление для путешествия</h1>
+      <h1 class="visually-hidden">Седона - лучшее направление для путешествия</h1>
 
-    <section class="advantages">
+      <section class="advantages">
 
-      <h2 class="advantages__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="advantages__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 
-      <p class="advantages__text">
-        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-      </p>
+        <p class="advantages__text">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
 
-      <ol class="advantages__list">
-        <li class="advantages__item advantages__item--main">
-          <div class="advantages__col-1-3">
-            <p class="advantages__item-heading  advantages__item-heading--main">
-              Настоящий городок
-            </p>
-            <p class="advantages__item-number">
-              №1
-            </p>
-            <p class="advantages__desc  advantages__desc--main">
-              Седона не аттракцион для туристов, там течет своя жизнь
-            </p>
-          </div>
-          <div class="advantages__col-2-3">
-            <img class="advantages__image" width="320" height="260" src="img/main-city-mobile@1x.jpg" alt="Фотография города">
-          </div>
-          <ul class="tips">
-            <li class="tips__item  tips__item--accommodation">
-              <p class="tips__item-heading">
-                Жилье
+        <ol class="advantages__list">
+          <li class="advantages__item advantages__item--main">
+            <div class="advantages__col-1-3">
+              <p class="advantages__item-heading  advantages__item-heading--main">
+                Настоящий городок
               </p>
-              <p class="tips__desc">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              <p class="advantages__item-number  advantages__item-number--main">
+                №1
               </p>
-            </li>
-            <li class="tips__item  tips__item--spec-elem  tips__item--souvenirs">
-              <p class="tips__item-heading">
-                Сувениры
+              <p class="advantages__desc  advantages__desc--main">
+                Седона не аттракцион для туристов, там течет своя жизнь
               </p>
-              <p class="tips__desc">
-                Не только китайского, но и местного производства!
+            </div>
+            <div class="advantages__col-2-3">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фотография города">
+              </picture>
+            </div>
+            <ul class="tips">
+              <li class="tips__item  tips__item--accommodation">
+                <p class="tips__item-heading">
+                  Жилье
+                </p>
+                <p class="tips__desc">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="tips__item  tips__item--spec-elem  tips__item--souvenirs">
+                <p class="tips__item-heading">
+                  Сувениры
+                </p>
+                <p class="tips__desc">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+              <li class="tips__item  tips__item--food">
+                <p class="tips__item-heading">
+                  Еда
+                </p>
+                <p class="tips__desc  tips__desc--last-elem">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__item advantages__item--main">
+            <div class="advantages__col-1-3 advantages__col-1-3--right">
+              <p class="advantages__item-heading  advantages__item-heading--main">
+                Там есть мост&nbsp;дьявола
               </p>
-            </li>
-            <li class="tips__item  tips__item--food">
-              <p class="tips__item-heading">
-                Еда
+              <p class="advantages__item-number  advantages__item-number--main">
+                №2
               </p>
-              <p class="tips__desc  tips__desc--last-elem">
-                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              <p class="advantages__desc advantages__desc--main">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
-            </li>
-          </ul>
-        </li>
-        <li class="advantages__item advantages__item--main">
-          <div class="advantages__col-1-3 advantages__col-1-3--right">
-            <p class="advantages__item-heading  advantages__item-heading--main">
-              Там есть мост&nbsp;дьявола
+            </div>
+            <div class="advantages__col-2-3">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__image  advantages__image--last-elem" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фотография моста дьявола">
+              </picture>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--secondary">
+            <p class="advantages__item-heading  advantages__item-heading--secondary">
+              Небольшая площадь
             </p>
-            <p class="advantages__item-number">
-              №2
+            <p class="advantages__item-number  advantages__item-number--secondary">
+              №3
             </p>
-            <p class="advantages__desc advantages__desc--main">
-              Да, по нему можно пройти! Если вы осмелитесь, конечно
+            <p class="advantages__desc advantages__desc--secondary">
+              Все интересные места находятся очень близко
             </p>
-          </div>
-          <div class="advantages__col-2-3">
-            <img class="advantages__image" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Фотография моста дьявола">
-          </div>
-        </li>
-        <li class="advantages__item advantages__item--secondary">
-          <p class="advantages__item-heading  advantages__item-heading--secondary">
-            Небольшая площадь
-          </p>
-          <p class="advantages__item-number">
-            №3
-          </p>
-          <p class="advantages__desc advantages__desc--secondary">
-            Все интересные места находятся очень близко
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--secondary">
-          <p class="advantages__item-heading  advantages__item-heading--secondary">
-            Красивая дорога
-          </p>
-          <p class="advantages__item-number">
-            №4
-          </p>
-          <p class="advantages__desc advantages__desc--secondary">
-            Ехать в Седону из Лас-Вегаса совсем не скучно!
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--secondary">
-          <p class="advantages__item-heading  advantages__item-heading--secondary">
-            Мало туристов
-          </p>
-          <p class="advantages__item-number">
-            №5
-          </p>
-          <p class="advantages__desc advantages__desc--secondary  advantages__desc--last-elem">
-            Большинство едет в гранд каньон и толпится там
-          </p>
-        </li>
-      </ol>
-    </section>
+          </li>
+          <li class="advantages__item advantages__item--secondary">
+            <p class="advantages__item-heading  advantages__item-heading--secondary">
+              Красивая дорога
+            </p>
+            <p class="advantages__item-number  advantages__item-number--secondary">
+              №4
+            </p>
+            <p class="advantages__desc advantages__desc--secondary">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--secondary  advantages__item--secondary--last-elem">
+            <p class="advantages__item-heading  advantages__item-heading--secondary">
+              Мало туристов
+            </p>
+            <p class="advantages__item-number  advantages__item-number--secondary">
+              №5
+            </p>
+            <p class="advantages__desc advantages__desc--secondary  advantages__desc--last-elem">
+              Большинство едет в гранд каньон и толпится там
+            </p>
+          </li>
+        </ol>
+      </section>
 
-    <section class="hotels">
+      <section class="hotels">
 
-      <h2 class="visually-hidden">Гостиницы в Седоне</h2>
+        <h2 class="visually-hidden">Гостиницы в Седоне</h2>
 
-      <p class="hotels__text">
-        Заинтересовались?
-      </p>
-      <p class="hotels__desc">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
-      </p>
-      <a class="hotels__link  button" href="hotels.html">Найти гостиницу</a>
-    </section>
+        <p class="hotels__text">
+          Заинтересовались?
+        </p>
+        <p class="hotels__desc">
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
+        </p>
+        <a class="hotels__link  button" href="hotels.html">Найти гостиницу</a>
+      </section>
 
-    <section class="map">
+      <section class="map">
 
-      <h2 class="visually-hidden">Седона на карте штата</h2>
+        <h2 class="visually-hidden">Седона на карте штата</h2>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__map-image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона расположена в штате Аризона">
+        </picture>
+      </section>
 
-      <img class="map__map-image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Седона расположена в штате Аризона">
-    </section>
+    </main>
 
     <footer class="page-footer">
       <p class="page-footer__hashtag">
@@ -190,7 +209,7 @@
       </p>
     </footer>
 
-  </main>
+  </div>
 </body>
 
 </html>

@@ -44,15 +44,38 @@
 }
 
 .advantages__item--main {
+  position: relative;
+
   color: $main;
 
   background-color: $bg-sedona;
 }
 
 .advantages__item--secondary {
+  position: relative;
+
   color: $text-main;
 
   background-color: #eeeeee;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+
+    width: 280px;
+    height: 1px;
+
+    background-color: #d6d6d6;
+  }
+}
+
+.advantages__item--secondary--last-elem {
+  &::after {
+    display: none;
+  }
 }
 
 .advantages__item-heading {
@@ -83,6 +106,48 @@
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 9px;
+    height: 2px;
+  }
+}
+
+.advantages__item-number--main {
+  &::before {
+    top: 85px;
+    left: 135px;
+
+    background-color: $main;
+  }
+
+  &::after {
+    top: 85px;
+    left: 176px;
+
+    background-color: $main;
+  }
+}
+
+.advantages__item-number--secondary {
+  &::before {
+    top: 71px;
+    left: 135px;
+
+    background-color: $text-sedona;
+  }
+
+  &::after {
+    top: 71px;
+    left: 176px;
+
+    background-color: $text-sedona;
+  }
 }
 
 .advantages__desc {
@@ -129,6 +194,30 @@
     font-size: 21px;
   }
 
+  .advantages__item-number--main {
+    &::before {
+      top: 117px;
+      left: 103px;
+    }
+
+    &::after {
+      top: 117px;
+      left: 144px;
+    }
+  }
+
+  .advantages__item-number--secondary {
+    &::before {
+      top: 117px;
+      left: 103px;
+    }
+
+    &::after {
+      top: 117px;
+      left: 144px;
+    }
+  }
+
   .advantages__text {
     padding-bottom: 50px;
   }
@@ -149,14 +238,13 @@
   }
 
   .advantages__col-1-3--right {
+    position: relative;
+
     order: 2;
   }
 
   .advantages__col-2-3 {
     width: 512px;
-
-    /* Временно для сетки */
-    background-color: darkcyan;
   }
 
   .advantages__image {
@@ -191,6 +279,10 @@
 
     width: 256px;
     padding-bottom: 8px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__desc--secondary {
@@ -211,6 +303,30 @@
     padding: 50px 287px 15px;
   }
 
+  .advantages__item-number--main {
+    &::before {
+      top: 124px;
+      left: 175px;
+    }
+
+    &::after {
+      top: 124px;
+      left: 215px;
+    }
+  }
+
+  .advantages__item-number--secondary {
+    &::before {
+      top: 117px;
+      left: 175px;
+    }
+
+    &::after {
+      top: 117px;
+      left: 215px;
+    }
+  }
+
   .advantages__text {
     padding-bottom: 50px;
   }
@@ -221,11 +337,20 @@
 
   .advantages__col-2-3 {
     width: 800px;
+    height: 256px;
+
+    overflow: hidden;
   }
 
   .advantages__image {
     width: 800px;
-    height: 256px;
+    height: 400px;
+
+    margin-top: -70px;
+  }
+
+  .advantages__image--last-elem {
+    margin-top: -76px;
   }
 
   .advantages__item-heading--main {

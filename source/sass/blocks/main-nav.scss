@@ -111,9 +111,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 768px;
-
-    /* Временно для сетки */
-    height: 56px;
   }
 
   .main-nav__list {
@@ -138,7 +135,7 @@
   }
 
   .main-nav__link {
-    padding: 14px 10px;
+    padding: 15px 10px;
 
     font-size: 14px;
     line-height: 26px;
@@ -194,9 +191,5 @@
 
   .main-nav__item--spec-elem {
     padding-right: 250px;
-  }
-
-  .main-nav__link {
-    padding: 14px 10px;
   }
 }
