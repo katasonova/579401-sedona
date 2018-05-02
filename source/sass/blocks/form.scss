@@ -41,7 +41,7 @@
   padding: 0 20px 35px 20px;
 }
 
-/* Временно для сетки */
+/* Временно для сетки
 
 .form__element:first-child {
   background-color: thistle;
@@ -61,7 +61,7 @@
 
 .form__element:nth-child(5) {
   background-color: lavender;
-}
+}*/
 
 .form__desc {
   padding-bottom: 21px;
@@ -368,7 +368,7 @@
   }
 
   .form__element--feedback {
-    width: 100%;
+    width: 648px;
     padding: 0;
     margin-bottom: 46px;
   }
@@ -487,6 +487,8 @@
   }
 
   .form__element--impression {
+    position: relative;
+
     width: 50%;
     padding-left: 84px;
   }
@@ -502,6 +504,21 @@
   .form__element--feedback {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .form__list--radio {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 5px;
+      right: -1px;
+
+      width: 1px;
+      height: 292px;
+
+      background-color: #dbdbdb;
+    }
   }
 
   .form__contacts-container {
@@ -535,7 +552,6 @@
   .form__label--name {
     width: 400px;
   }
-
 
   .form__label-checkbox {
     &::before {
