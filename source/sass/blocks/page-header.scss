@@ -77,8 +77,7 @@
     background-position: 0 -228px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: 768px 290px;
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 }
@@ -117,8 +116,7 @@
     background-position: 0 -217px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: 1200px 301px;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }
