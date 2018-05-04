@@ -81,10 +81,6 @@ gulp.task("serve", function () {
   gulp.watch("source/*.html", ["html"]);
 });
 
-gulp.task("build", function (done) {
-  run("style", "sprite", "html", done);
-});
-
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
