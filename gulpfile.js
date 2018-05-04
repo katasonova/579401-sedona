@@ -14,6 +14,7 @@ var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var del = require("del");
 var server = require("browser-sync").create();
+var run = require("run-sequence");
 
 gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
@@ -39,7 +40,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function () {
-  return gulp.src("soure/*.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
