@@ -17,6 +17,7 @@
 .socials-list__link {
   display: block;
   padding: 24px;
+  box-sizing: border-box;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   color: $main;
@@ -34,6 +35,10 @@
   &:active {
     background-color: #5496bd;
   }
+}
+
+.socials-list__link svg {
+  fill: $main;
 }
 
 @media (min-width: $tablet-width) {
