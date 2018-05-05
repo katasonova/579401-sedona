@@ -43,8 +43,73 @@
   display: block;
 
   @include img;
+}
 
-  margin-bottom: 100px;
+.video__controls-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 38px;
+}
+
+.video__progress-bar {
+  position: relative;
+
+  width: 280px;
+  padding: 22px 22px 23px;
+  margin: auto;
+  margin-top: -45px;
+  box-sizing: border-box;
+
+  background-color: $text-main;
+  opacity: 0.6;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 17px;
+    left: 58px;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: $main;
+
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 20px;
+    left: 22px;
+
+    width: 235px;
+    height: 3px;
+
+    background-color: $main;
+
+    opacity: 0.2;
+  }
+}
+
+.video__controls {
+  width: 280px;
+  margin: auto;
+  padding: 22px 23px 20px 25px;
+  box-sizing: border-box;
+
+  background-color: #f2f2f2;
+}
+
+.video__controls-img--first-elem {
+  margin-right: 129px;
+}
+
+.video__controls-img--second-elem {
+  margin-right: 27px;
 }
 
 @media (min-width: $tablet-width) {

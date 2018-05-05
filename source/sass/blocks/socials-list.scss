@@ -15,8 +15,9 @@
 }
 
 .socials-list__link {
-  display: block;
-  padding: 24px;
+  display: flex;
+  width: 46px;
+  height: 48px;
   box-sizing: border-box;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -37,7 +38,13 @@
   }
 }
 
-.socials-list__link svg {
+.socials-list__link:active .socials-list__link-img {
+  fill-opacity: 0.3;
+}
+
+.socials-list__link-img {
+  margin: auto;
+
   fill: $main;
 }
 
