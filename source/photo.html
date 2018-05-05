@@ -25,6 +25,7 @@
         </picture>
       </a>
       <nav class="main-nav">
+        <!--.main-nav__toggle--open + .main-nav__toggle--close-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -177,15 +178,21 @@
               <div class="video__progress-bar">
               </div>
               <div class="video__controls">
-                <svg class="video__controls-img  video__controls-img--first-elem" width="16" height="20">
-                  <use xlink:href="img/sprite.svg#sprite-icon-video-replay"></use>
-                </svg>
-                <svg class="video__controls-img  video__controls-img--second-elem" width="32" height="20">
-                  <use xlink:href="img/sprite.svg#sprite-icon-video-subtitles"></use>
-                </svg>
-                <svg class="video__controls-img" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#sprite-icon-video-fullscreen"></use>
-                </svg>
+                <button class="video__controls-button  video__controls-button--first-elem">
+                  <svg class="video__controls-img" width="16" height="20">
+                    <use xlink:href="img/sprite.svg#sprite-icon-video-replay"></use>
+                  </svg>
+                </button>
+                <button class="video__controls-button  video__controls-button--second-elem">
+                  <svg class="video__controls-img" width="32" height="20">
+                    <use xlink:href="img/sprite.svg#sprite-icon-video-subtitles"></use>
+                  </svg>
+                </button>
+                <button class="video__controls-button">
+                  <svg class="video__controls-img" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#sprite-icon-video-fullscreen"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

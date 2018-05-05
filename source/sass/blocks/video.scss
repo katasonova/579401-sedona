@@ -105,6 +105,16 @@
   cursor: pointer;
 }
 
+.video__controls-button {
+  @include button;
+
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+
+  background-color: transparent;
+}
+
 .video__controls-img {
   &:hover,
   &:focus {
@@ -158,12 +168,10 @@
     flex-direction: row;
 
     margin-top: -93px;
-    padding-bottom: 13px;
+    padding-bottom: 2px;
     box-sizing: border-box;
 
-    background-color: $text-main;
-
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .video__progress-bar {
@@ -207,7 +215,7 @@
     }
   }
 
-  .video__controls-img--first-elem {
+  .video__controls-button--first-elem {
     position: absolute;
     top: 35px;
     left: 35px;
@@ -215,7 +223,7 @@
     margin-right: 0;
   }
 
-  .video__controls-img--second-elem {
+  .video__controls-button--second-elem {
     margin-left: auto;
   }
 }
