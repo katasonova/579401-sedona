@@ -7,8 +7,38 @@
   margin: 0 auto;
   padding: 0;
 
+  background-color: $main;
+
   box-shadow: 0 19px 15px -5px rgba(0, 1, 1, 0.15),
-    0 -9px 15px -5px rgba(0, 1, 1, 0.15);
+  0 -9px 15px -5px rgba(0, 1, 1, 0.15);
+
+  z-index: 5;
+}
+
+.modal--sucсess {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  top: 20vh;
+}
+
+.modal--failure {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  top: 25vh;
 }
 
 .modal__heading {

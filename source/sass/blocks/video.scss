@@ -98,7 +98,7 @@
 .video__controls {
   width: 280px;
   margin: auto;
-  padding: 22px 23px 20px 25px;
+  padding: 16px 15px 15px;
   box-sizing: border-box;
 
   background-color: #f2f2f2;
@@ -113,9 +113,21 @@
   box-sizing: border-box;
 
   background-color: transparent;
+
+  cursor: pointer;
+}
+
+.video__controls-button--first-elem {
+  margin-right: 118px;
+}
+
+.video__controls-button--second-elem {
+  margin-right: 18px;
 }
 
 .video__controls-img {
+  fill: #5c6870;
+
   &:hover,
   &:focus {
     fill: #333333;
@@ -124,14 +136,6 @@
   &:active {
     fill: #b8b8b8;
   }
-}
-
-.video__controls-img--first-elem {
-  margin-right: 129px;
-}
-
-.video__controls-img--second-elem {
-  margin-right: 27px;
 }
 
 @media (min-width: $tablet-width) {
@@ -168,7 +172,7 @@
     flex-direction: row;
 
     margin-top: -93px;
-    padding-bottom: 2px;
+    padding-bottom: 13px;
     box-sizing: border-box;
 
     background-color: rgba(0, 0, 0, 0.6);
@@ -196,13 +200,13 @@
 
   .video__controls {
     width: 162px;
-    padding-top: 36px;
-    padding-left: 38px;
+    padding-top: 30px;
+    padding-left: 36px;
 
     background-color: transparent;
   }
 
-  .video__controls-img {
+  .video__controls-button .video__controls-img {
     fill: $main;
 
     &:hover,
@@ -217,8 +221,8 @@
 
   .video__controls-button--first-elem {
     position: absolute;
-    top: 35px;
-    left: 35px;
+    top: 29px;
+    left: 25px;
 
     margin-right: 0;
   }
@@ -251,21 +255,30 @@
     width: 800px;
   }
 
+  .video__controls-button--first-elem {
+    top: 30px;
+  }
+
   .video__progress-bar {
     width: 640px;
 
     &::before {
-      top: 24px;
+      top: 25px;
       bottom: 0;
       left: 206px;
     }
 
     &::after {
-      top: 27px;
+      top: 28px;
       bottom: 0;
       left: 94px;
 
       width: 540px;
     }
+  }
+
+    .video__controls {
+    padding-top: 31px;
+    padding-left: 34px;
   }
 }
