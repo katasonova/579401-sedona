@@ -424,10 +424,16 @@
   }
 
   .form__desc--contacts {
+    position: relative;
+
     display: flex;
 
     &::before {
       content: "";
+
+      position: absolute;
+      top: 12px;
+      left: -185px;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -442,6 +448,10 @@
     &::after {
       content: "";
 
+      position: absolute;
+      top: 12px;
+      right: -245px;
+
       flex-grow: 1;
       flex-shrink: 0;
 
@@ -454,9 +464,87 @@
   }
 
   .form__desc--sightseeing {
+    position: relative;
+
+    display: flex;
+
     width: 280px;
     padding-bottom: 0px;
     margin-bottom: -4px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 25px;
+      left: -185px;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 125px;
+      height: 1px;
+      margin-right: 60px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 25px;
+      right: -245px;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 125px;
+      height: 1px;
+      margin-right: 60px;
+
+      background-color: #dbdbdb;
+    }
+  }
+
+  .form__desc--feedback {
+    position: relative;
+
+    display: flex;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 11px;
+      left: -199px;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 125px;
+      height: 1px;
+      margin-right: 60px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 11px;
+      right: -259px;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      width: 125px;
+      height: 1px;
+      margin-right: 60px;
+
+      background-color: #dbdbdb;
+    }
   }
 
   .form__element::before {
@@ -621,6 +709,7 @@
   .form__element--name {
     width: 50%;
     padding-left: 80px;
+    padding-bottom: 0px;
   }
 
   .form__element--contacts {
@@ -647,6 +736,62 @@
   .form__element--feedback {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .form__desc--impression {
+    margin-left: 55px;
+  }
+
+  .form__desc--contacts {
+    &::before {
+      top: 11px;
+      left: -341px;
+
+      width: 280px;
+    }
+
+    &::after {
+      top: 11px;
+      right: -401px;
+
+      width: 280px;
+    }
+  }
+
+  .form__desc--name {
+    padding-bottom: 23px;
+  }
+
+  .form__desc--sightseeing {
+    &::before {
+      top: 25px;
+      left: -341px;
+
+      width: 280px;
+    }
+
+    &::after {
+      top: 25px;
+      right: -401px;
+
+      width: 280px;
+    }
+  }
+
+  .form__desc--feedback {
+    &::before {
+      top: 11px;
+      left: -355px;
+
+      width: 280px;
+    }
+
+    &::after {
+      top: 11px;
+      right: -415px;
+
+      width: 280px;
+    }
   }
 
   .form__list--radio {
@@ -734,7 +879,7 @@
 
   .form__button {
     width: 50%;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   .form__button-wrapper {
