@@ -469,7 +469,7 @@
     display: flex;
 
     width: 280px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: -4px;
 
     &::before {
@@ -709,7 +709,7 @@
   .form__element--name {
     width: 50%;
     padding-left: 80px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .form__element--contacts {
