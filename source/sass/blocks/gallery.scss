@@ -158,26 +158,13 @@
     padding-right: 170px;
   }
 
-  /* Временно для сетки
-  .gallery__item:first-child {
-    background-color: mediumaquamarine;
-  }
-
-  .gallery__item:nth-child(2) {
-    background-color: wheat;
-  }
-
-  .gallery__item:nth-child(3) {
-    background-color: darkred;
-  }
-
-  .gallery__item:nth-child(4) {
-    background-color: rebeccapurple;
-  }*/
   .gallery__list {
     flex-direction: row;
     flex-wrap: wrap;
 
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 60px;
     padding-right: 60px;
 

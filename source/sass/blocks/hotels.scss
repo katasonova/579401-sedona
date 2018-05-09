@@ -5,9 +5,6 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-
-  /* Временно для сетки
-  background-color: gold; */
 }
 
 .hotels__text {
@@ -39,9 +36,11 @@
 }
 
 .hotels__link {
+  width: 458px;
   margin: auto;
   margin-bottom: 49px;
   padding: 16px 46px;
+  box-sizing: border-box;
 
   text-align: center;
 }
@@ -58,7 +57,7 @@
   }
 
   .hotels__desc {
-    padding: 16px 186px 42px;
+    padding: 16px 185px 42px;
   }
 
   .hotels__link {
