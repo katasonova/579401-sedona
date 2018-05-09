@@ -213,6 +213,7 @@
 
 .form__input--contacts {
   width: 280px;
+  min-height: 58px;
   padding-left: 21px;
   box-sizing: border-box;
 }
@@ -606,6 +607,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    width: 100%;
   }
 
   .form__list-item {
@@ -655,7 +658,6 @@
   }
 
   .form__input--contacts {
-    min-height: 58px;
     width: 100%;
   }
 
@@ -798,6 +800,10 @@
 
       width: 280px;
     }
+  }
+
+  .form__item--name {
+    width: 100%;
   }
 
   .form__list--radio {
