@@ -619,6 +619,10 @@
     box-sizing: border-box;
   }
 
+  .form__contacts-container {
+    width: 100%;
+  }
+
   .form__label--name {
     width: 267px;
     padding-right: 0;
@@ -651,6 +655,7 @@
   }
 
   .form__input--contacts {
+    min-height: 58px;
     width: 100%;
   }
 
@@ -734,6 +739,7 @@
   }
 
   .form__element--feedback {
+    width: 100%;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -807,6 +813,10 @@
 
       background-color: #dbdbdb;
     }
+  }
+
+  .form__list--checkbox {
+    width: 100%;
   }
 
   .form__contacts-container {
