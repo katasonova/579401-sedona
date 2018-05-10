@@ -411,6 +411,7 @@
   }
 
   .form__desc {
+    width: 100%;
     font-size: 21px;
   }
 
@@ -752,14 +753,14 @@
   .form__desc--contacts {
     &::before {
       top: 11px;
-      left: -341px;
+      left: 0px;
 
       width: 280px;
     }
 
     &::after {
       top: 11px;
-      right: -401px;
+      right: -60px;
 
       width: 280px;
     }
@@ -772,14 +773,14 @@
   .form__desc--sightseeing {
     &::before {
       top: 25px;
-      left: -341px;
+      left: 0px;
 
       width: 280px;
     }
 
     &::after {
       top: 25px;
-      right: -401px;
+      right: -60px;
 
       width: 280px;
     }
@@ -788,14 +789,14 @@
   .form__desc--feedback {
     &::before {
       top: 11px;
-      left: -355px;
+      left: 0px;
 
       width: 280px;
     }
 
     &::after {
       top: 11px;
-      right: -415px;
+      right: -60px;
 
       width: 280px;
     }
