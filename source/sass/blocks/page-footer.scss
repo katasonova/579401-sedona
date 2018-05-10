@@ -74,7 +74,19 @@
   }
 
   .page-footer__copyright {
+    display: flex;
+    align-items: center;
     padding-bottom: 0;
+  }
+
+  .page-footer__link {
+    display: block;
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+
+  .page-footer__link-logo {
+    position: static;
   }
 }
 
