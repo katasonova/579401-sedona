@@ -1,4 +1,4 @@
-.form {
+.form__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,7 +417,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
+  .form__container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -731,7 +731,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form {
+  .form__container {
     width: 1200px;
   }
 
