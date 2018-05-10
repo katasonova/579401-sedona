@@ -441,8 +441,6 @@
   .form__desc--contacts {
     position: relative;
 
-    display: flex;
-
     &::before {
       content: "";
 
@@ -481,7 +479,6 @@
   .form__desc--sightseeing {
     position: relative;
 
-    display: flex;
     /*width: 280px;*/
     padding-bottom: 0;
     margin-bottom: -4px;
@@ -523,8 +520,6 @@
 
   .form__desc--feedback {
     position: relative;
-
-    display: flex;
 
     &::before {
       content: "";
