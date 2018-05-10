@@ -126,6 +126,22 @@
 
 .advantages__item-number--main {
   &::before {
+    top: 85px;
+    left: 135px;
+
+    background-color: $main;
+  }
+
+  &::after {
+    top: 85px;
+    left: 176px;
+
+    background-color: $main;
+  }
+}
+
+.advantages__item-number--first-elem {
+    &::before {
     top: 122px;
     left: 135px;
 
