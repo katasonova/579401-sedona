@@ -207,7 +207,7 @@
     background-color: #e5e5e5;
   }
 
-  &active,
+  &:active,
   &:focus {
     padding: 12px 18px;
 
@@ -488,7 +488,7 @@
 
       position: absolute;
       top: 25px;
-      left: 0;
+      left: -65px;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -505,7 +505,7 @@
 
       position: absolute;
       top: 25px;
-      right: -60px;
+      right: -125px;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -781,14 +781,14 @@
   .form__desc--sightseeing {
     &::before {
       top: 25px;
-      left: 0;
+      left: 40px;
 
       width: 280px;
     }
 
     &::after {
       top: 25px;
-      right: -60px;
+      right: -20px;
 
       width: 280px;
     }
