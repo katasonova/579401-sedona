@@ -445,6 +445,7 @@
 
   .form__desc--name {
     text-align: left;
+    margin-bottom: 34px;
 
     &::before {
       display: none;
@@ -575,7 +576,7 @@
 
   .form__element--name {
     width: 324px;
-    padding: 35px 0 50px 57px;
+    padding: 0 0 50px 57px;
     box-sizing: border-box;
   }
 
