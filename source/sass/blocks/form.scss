@@ -61,7 +61,6 @@
 }
 
 .form__desc {
-  width: 100%;
   padding-bottom: 21px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -435,7 +434,7 @@
 
       position: absolute;
       top: 12px;
-      left: -185px;
+      left: 0;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -452,7 +451,7 @@
 
       position: absolute;
       top: 12px;
-      right: -245px;
+      right: -60px;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -469,7 +468,6 @@
     position: relative;
 
     display: flex;
-
     width: 280px;
     padding-bottom: 0;
     margin-bottom: -4px;
@@ -479,7 +477,7 @@
 
       position: absolute;
       top: 25px;
-      left: -185px;
+      left: 0px;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -496,7 +494,7 @@
 
       position: absolute;
       top: 25px;
-      right: -245px;
+      right: -60px;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -519,7 +517,7 @@
 
       position: absolute;
       top: 11px;
-      left: -199px;
+      left: 0;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -536,7 +534,7 @@
 
       position: absolute;
       top: 11px;
-      right: -259px;
+      right: -60px;
 
       flex-grow: 1;
       flex-shrink: 0;
