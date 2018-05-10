@@ -469,7 +469,7 @@
     position: relative;
 
     display: flex;
-    width: 280px;
+    /*width: 280px;*/
     padding-bottom: 0;
     margin-bottom: -4px;
 
@@ -753,7 +753,7 @@
   .form__desc--contacts {
     &::before {
       top: 11px;
-      left: 0px;
+      left: 0;
 
       width: 280px;
     }
@@ -773,7 +773,7 @@
   .form__desc--sightseeing {
     &::before {
       top: 25px;
-      left: 0px;
+      left: 0;
 
       width: 280px;
     }
@@ -789,7 +789,7 @@
   .form__desc--feedback {
     &::before {
       top: 11px;
-      left: 0px;
+      left: 0;
 
       width: 280px;
     }
