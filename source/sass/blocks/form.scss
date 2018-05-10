@@ -21,19 +21,6 @@
   padding-bottom: 24px;
 
   border: none;
-
-  /*&::before {
-    content: "";
-
-    position: absolute;
-    top: -19px;
-    left: 0;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: #e5e5e5;
-  }*/
 }
 
 .form__element--name {
@@ -54,19 +41,6 @@
 
 .form__element--sightseeing {
   padding-bottom: 16px;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: -19px;
-    left: -42px;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: #e5e5e5;
-  }
 }
 
 .form__element--feedback {
@@ -94,6 +68,22 @@
     position: absolute;
     top: -19px;
     left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: #e5e5e5;
+  }
+}
+
+.form__desc--sightseeing {
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -19px;
+    left: -42px;
 
     width: 320px;
     height: 1px;
