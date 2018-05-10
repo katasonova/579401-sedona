@@ -25,10 +25,13 @@
 }
 
 .page-footer__copyright {
+  display: flex;
+  align-items: center;
+
   @include h-p;
   padding-bottom: 28px;
   padding-right: 41px;
-
+  padding-left: 38px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -40,14 +43,16 @@
 }
 
 .page-footer__link {
-  position: relative;
+  /*position: relative;*/
+  display: block;
+  margin-left: 14px;
+  margin-top: 10px;
 }
 
 .page-footer__link-logo {
-  position: absolute;
+  /*position: absolute;
   top: -29px;
-  left: 102px;
-
+  left: 102px;*/
   width: 27px;
   height: 34px;
 
@@ -74,19 +79,19 @@
   }
 
   .page-footer__copyright {
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: center;*/
     padding-bottom: 0;
   }
 
   .page-footer__link {
-    display: block;
+    /*display: block;
     margin-left: 14px;
-    margin-top: 10px;
+    margin-top: 10px;*/
   }
 
   .page-footer__link-logo {
-    position: static;
+    /*position: static;*/
   }
 }
 
