@@ -36,8 +36,8 @@
   padding: 52px 44px 68px;
 
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 133px, 0 0;
-  background-size: 320px 26px, 320px 158px;
+  background-position: 0 133px, 50% 100%;
+  background-size: 320px 26px, 240%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
