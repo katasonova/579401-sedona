@@ -6,9 +6,6 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-
-  /* Временно для сетки
-  background-color: pink; */
 }
 
 .advantages__heading {
@@ -27,7 +24,7 @@
 
 .advantages__text {
   @include h-p;
-  padding: 13px 20px 42px;
+  padding: 13px 20px 6px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -51,6 +48,15 @@
   background-color: $bg-sedona;
 }
 
+.advantages__item--first-elem {
+  padding-top: 37px;
+
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 320px 37px;
+}
+
 .advantages__item--secondary {
   position: relative;
 
@@ -72,7 +78,7 @@
   }
 }
 
-.advantages__item--secondary--last-elem {
+.advantages__item-secondary--last-elem {
   &::after {
     display: none;
   }
@@ -128,6 +134,22 @@
 
   &::after {
     top: 85px;
+    left: 176px;
+
+    background-color: $main;
+  }
+}
+
+.advantages__item-number--first-elem {
+  &::before {
+    top: 122px;
+    left: 135px;
+
+    background-color: $main;
+  }
+
+  &::after {
+    top: 122px;
     left: 176px;
 
     background-color: $main;
@@ -270,6 +292,13 @@
 
   .advantages__desc--main {
     padding: 21px 40px 40px;
+  }
+
+  .advantages__item--first-elem {
+    padding-top: 0;
+
+    background-image: none;
+    background-size: 0 0;
   }
 
   .advantages__item--secondary {

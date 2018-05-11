@@ -3,7 +3,7 @@
   justify-content: space-between;
 
   @include ul;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .socials-list__item {
@@ -15,8 +15,10 @@
 }
 
 .socials-list__link {
-  display: block;
-  padding: 24px;
+  display: flex;
+  width: 46px;
+  height: 48px;
+  box-sizing: border-box;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   color: $main;
@@ -36,15 +38,29 @@
   }
 }
 
+.socials-list__link:active .socials-list__link-img {
+  fill-opacity: 0.3;
+}
+
+.socials-list__link-img {
+  margin: auto;
+
+  fill: $main;
+}
+
 @media (min-width: $tablet-width) {
   .socials-list {
-    margin-right: 113px;
+    margin-right: 75px;
     margin-bottom: 0;
+  }
+
+  .socials-list__item {
+    margin-right: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .socials-list {
-    margin-right: 269px;
+    margin-right: 232px;
   }
 }
