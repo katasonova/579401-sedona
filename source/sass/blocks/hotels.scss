@@ -35,6 +35,10 @@
   @include uppercase;
 }
 
+.hotels__desc-gap {
+  display: none;
+}
+
 .hotels__link {
   margin: auto;
   margin-bottom: 49px;
@@ -56,7 +60,11 @@
   }
 
   .hotels__desc {
-    padding: 16px 185px 42px;
+    padding: 16px 165px 42px;
+  }
+
+  .hotels__desc-gap {
+    display: block;
   }
 
   .hotels__link {
@@ -72,7 +80,7 @@
   }
 
   .hotels__desc {
-    padding: 16px 401px 47px;
+    padding: 16px 380px 47px;
   }
 
   .hotels__link {
