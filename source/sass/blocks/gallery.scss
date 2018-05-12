@@ -278,7 +278,13 @@
     left: 1px;
     bottom: 41px;
 
+    width: 100%;
+    padding-top: 15px;
+    box-sizing: border-box;
+
     color: $main;
+
+    background-color: rgba(0, 0, 0, 0.3);
 
     z-index: 2;
   }
@@ -299,8 +305,8 @@
     bottom: 0;
 
     width: 100%;
-    height: 63px;
-    padding-top: 17px;
+    min-height: 41px;
+    padding-top: 0;
 
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -315,6 +321,8 @@
 
   .gallery__likes {
     color: $main;
+
+    z-index: 3;
   }
 
   .gallery__likes--spec-elem {
@@ -325,6 +333,7 @@
     fill: $main;
 
     margin-right: 60px;
-    margin-top: 11px;
+    margin-top: -11px;
+    z-index: 3;
   }
 }

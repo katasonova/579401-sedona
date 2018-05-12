@@ -224,6 +224,12 @@
 
     border: 4px solid #e5e5e5;
   }
+
+  &::placeholder {
+    color: #000000;
+
+    opacity: 1;
+  }
 }
 
 .form__input--name {
@@ -406,6 +412,11 @@
   &:hover,
   &:focus {
     background-color: #e5e5e5;
+  }
+
+  &::placeholder {
+    color: #000000;
+    opacity: 1;
   }
 }
 
@@ -711,6 +722,7 @@
   .form__button {
     width: 324px;
     margin-bottom: 59px;
+    padding-left: 0;
   }
 
   .form__button-wrapper {

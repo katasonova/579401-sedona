@@ -74,6 +74,10 @@
   padding-bottom: 35px;
 }
 
+.tips__desc-gap {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .tips {
     flex-direction: row;
@@ -81,7 +85,8 @@
   }
 
   .tips__item {
-    padding: 159px 40px 27px 39px;
+    width: 33%;
+    padding: 159px 45px 27px 45px;
 
     &::before {
       width: 78px;
@@ -95,12 +100,12 @@
   }
 
   .tips__item--souvenirs {
-    background-position: 80px 57px;
+    background-position: 95px 57px;
     background-size: 64px;
   }
 
   .tips__item--food {
-    background-position: 86px 63px;
+    background-position: 91px 63px;
     background-size: 75px;
   }
 
@@ -109,7 +114,7 @@
   }
 
   .tips__item-heading {
-    padding-right: 10px;
+    padding-right: 0;
     padding-bottom: 20px;
 
     font-size: 21px;
@@ -123,7 +128,7 @@
 
 @media (min-width: $desktop-width) {
   .tips__item {
-    padding: 159px 71px 30px 58px;
+    padding: 159px 57px 30px 55px;
   }
 
   .tips__item--accommodation {
@@ -131,14 +136,18 @@
   }
 
   .tips__item--souvenirs {
-    background-position: 145px 57px;
+    background-position: 167px 57px;
   }
 
   .tips__item--food {
-    background-position: 156px 63px;
+    background-position: 162px 63px;
   }
 
   .tips__desc--last-elem {
     padding-bottom: 53px;
+  }
+
+  .tips__desc-gap {
+    display: block;
   }
 }

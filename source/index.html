@@ -5,17 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
-
-  <div style="display: none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-
   <div class="page-container">
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <a class="page-header__logo">
@@ -98,7 +99,7 @@
                   Сувениры
                 </p>
                 <p class="tips__desc">
-                  Не только китайского, но и местного производства!
+                  Не только китайского,<br class="tips__desc-gap"> но и местного производства!
                 </p>
               </li>
               <li class="tips__item  tips__item--food">
@@ -106,7 +107,7 @@
                   Еда
                 </p>
                 <p class="tips__desc  tips__desc--last-elem">
-                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                  Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!
                 </p>
               </li>
             </ul>
@@ -120,7 +121,7 @@
                 №2
               </p>
               <p class="advantages__desc advantages__desc--main">
-                Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно
+                Да, по нему можно пройти! <br class="advantages__desc-gap">Если&nbsp;вы осмелитесь, конечно
               </p>
             </div>
             <div class="advantages__col-2-3">
@@ -154,7 +155,7 @@
               №4
             </p>
             <p class="advantages__desc advantages__desc--secondary">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
+              Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!
             </p>
           </li>
           <li class="advantages__item advantages__item--secondary  advantages__item--secondary-last-elem">
@@ -179,7 +180,7 @@
           Заинтересовались?
         </p>
         <p class="hotels__desc">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
+          Укажите предполагаемые даты поездки,<br class="hotels__desc-gap">и мы покажем вам лучшие предложения гостиниц в Cедоне
         </p>
         <a class="hotels__link  button" href="hotels.html">Найти гостиницу</a>
       </section>
@@ -187,7 +188,7 @@
       <section class="map">
 
         <h2 class="visually-hidden">Седона на карте штата</h2>
-        <iframe class="map__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361087.3010049113!2d-113.21237531460991!3d34.646827330199926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1525971036235" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361087.3010049113!2d-113.21237531460991!3d34.646827330199926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1525971036235" width="320" height="350" style="border:0" allowfullscreen></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
