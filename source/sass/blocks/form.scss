@@ -225,20 +225,10 @@
     border: 4px solid #e5e5e5;
   }
 
-  &::-webkit-input-placeholder {
-    color: #000000;
-  }
-
-  &:-ms-input-placeholder {
-    color: #000000;
-  }
-
-  &::-ms-input-placeholder {
-    color: #000000;
-  }
-
   &::placeholder {
     color: #000000;
+
+    opacity: 1;
   }
 }
 
@@ -424,20 +414,9 @@
     background-color: #e5e5e5;
   }
 
-  &::-webkit-input-placeholder {
-    color: #000000;
-  }
-
-  &:-ms-input-placeholder {
-    color: #000000;
-  }
-
-  &::-ms-input-placeholder {
-    color: #000000;
-  }
-
   &::placeholder {
     color: #000000;
+    opacity: 1;
   }
 }
 
